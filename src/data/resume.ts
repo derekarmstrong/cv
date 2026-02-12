@@ -36,9 +36,9 @@ export interface Profile {
 
 export const profile: Profile = {
   name: "Derek Armstrong",
-  title: "IT Manager & Full-Stack Developer",
+  title: "Solutions Architect and Software Engineer",
   location: "Stockholm, Sweden",
-  summary: "Experienced IT Manager and Full-Stack Developer with a strong background in pre-sales engineering, solution design, and cloud migration. Proven track record of managing technical lifecycles, optimizing infrastructure, and leading cross-functional teams.",
+  summary: "Experienced Solutions Architect and Software Engineer with a strong background in pre-sales engineering, solution design, and cloud migration. Proven track record of managing technical lifecycles, optimizing infrastructure, and leading cross-functional teams.",
   email: "cv@derekarm.com",
   socials: {
     linkedin: "https://linkedin.com/in/derek-allen-armstrong",
