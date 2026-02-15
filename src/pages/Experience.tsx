@@ -1,9 +1,59 @@
-import { experience } from '../data/resume';
+import { experience, skills as skillCategories, projects } from '../data/resume';
 import { BentoCard } from '../components/BentoCard';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 export const Experience = () => {
+    const location = useLocation();
+    // Flatten all skills to make matching easier
+    const allSkills = skillCategories.flatMap(cat => cat.skills);
+
+    const hasProjects = (skill: string) => {
+        return projects.some(p => p.tech.some(t => t.toLowerCase() === skill.toLowerCase()));
+    };
+
+    const renderDescription = (text: string) => {
+        // Create a regex to match any of the skills (case-insensitive)
+        // We sort by length descending to match longer multi-word skills first (e.g. ".NET Core" before ".NET")
+        // We only use \b word boundaries if the skill starts/ends with a word character
+        // This ensures ".NET Core" (starts with .) and "C#" (ends with #) match correctly
+        const sortedSkills = [...allSkills].sort((a, b) => b.length - a.length);
+        const pattern = sortedSkills.map(skill => {
+            const escaped = skill.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            let res = escaped;
+            if (/^\w/.test(skill)) res = '\\b' + res;
+            if (/\w$/.test(skill)) res = res + '\\b';
+            return res;
+        }).join('|');
+        const regex = new RegExp(`(${pattern})`, 'gi');
+
+        const parts = text.split(regex);
+
+        return (
+            <span>
+                {parts.map((part, i) => {
+                    const skillMatch = allSkills.find(s => s.toLowerCase() === part.toLowerCase());
+                    const linked = skillMatch && hasProjects(skillMatch);
+
+                    if (linked) {
+                        return (
+                            <Link
+                                key={i}
+                                to={`/projects?tech=${encodeURIComponent(part)}`}
+                                state={{ from: location.pathname }}
+                                className="text-primary hover:underline font-medium"
+                            >
+                                {part}
+                            </Link>
+                        );
+                    }
+                    return part;
+                })}
+            </span>
+        );
+    };
+
     return (
         <div className="max-w-4xl mx-auto px-4 md:px-6 pb-20">
             <div className="mb-12">
@@ -39,7 +89,7 @@ export const Experience = () => {
                                         <Calendar size={14} />
                                         <span className="font-mono text-xs">{job.period}</span>
                                     </div>
-                                    <div className="h-px w-full bg-border my-1" /> {/* Separator added here */}
+                                    <div className="h-px w-full bg-border my-1" />
                                     <div className="flex items-center gap-2">
                                         <MapPin size={14} />
                                         <span>{job.location}</span>
@@ -51,7 +101,7 @@ export const Experience = () => {
                                 {job.description.map((item, i) => (
                                     <li key={i} className="flex items-start text-text-secondary text-sm leading-relaxed">
                                         <span className="mr-3 text-primary mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/50 shrink-0" />
-                                        <span>{item}</span>
+                                        <span>{renderDescription(item)}</span>
                                     </li>
                                 ))}
                             </ul>

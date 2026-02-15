@@ -91,9 +91,14 @@ export const Home = () => {
                     <BentoCard title="Core Stack" delay={0.3} className="bg-gradient-to-br from-surface to-surface-hover">
                         <div className="flex flex-wrap gap-2">
                             {['React', 'TypeScript', 'Node.js', '.NET'].map(tech => (
-                                <span key={tech} className="text-xs font-mono px-2 py-1 rounded border border-border bg-black/20 text-text-secondary">
+                                <ActionButton
+                                    key={tech}
+                                    variant="secondary"
+                                    onClick={() => navigate(`/projects?tech=${encodeURIComponent(tech)}`, { state: { from: '/' } })}
+                                    className="px-2 py-1 h-auto text-[10px] font-mono border-border bg-black/20 text-text-secondary hover:text-primary hover:border-primary transition-all"
+                                >
                                     {tech}
-                                </span>
+                                </ActionButton>
                             ))}
                         </div>
                     </BentoCard>

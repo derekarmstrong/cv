@@ -176,7 +176,7 @@ export const projects: Project[] = [
       "High-precision tracking using LiDAR and FLIR on Android.",
       "Real-time data processing with Blazor Hybrid (MAUI)."
     ],
-    tech: ["Blazor Hybrid", "MAUI", "LiDAR", "FLIR", "Android"]
+    tech: ["Blazor", "C#", "Android", "Git", "TypeScript"]
   },
   {
     id: "greenhouse-ops",
@@ -187,7 +187,7 @@ export const projects: Project[] = [
       "IoT and Edge infrastructure for greenhouse management.",
       "Offline-first data verification for high-interference environments."
     ],
-    tech: [".NET Core", "React", "IoT", "Edge Computing"]
+    tech: [".NET Core", "React", "Linux", "Git", "TypeScript", "Azure"]
   },
   {
     id: "business-in-a-box",
@@ -198,7 +198,7 @@ export const projects: Project[] = [
       "Self-hosted private cloud solution using Docker and virtualization.",
       "Provided high-availability alternative to proprietary SaaS platforms."
     ],
-    tech: ["Docker", "Linux", "Virtualization", "Networking"]
+    tech: ["Docker", "Linux", "Virtualization", "AWS", "Networking", "Cloudflare"]
   },
   {
     id: "logistics-platform",
@@ -209,7 +209,7 @@ export const projects: Project[] = [
       "Modernized logistics tool into a Node.js/Directus environment.",
       "Visual builder integration for non-technical team schema design."
     ],
-    tech: ["Node.js", "Directus", "Vue.js", "PostgreSQL"]
+    tech: ["Node.js", "Directus", "Vue.js", "PostgreSQL", "Git", "TypeScript"]
   },
   {
     id: "erp-modernization",
@@ -220,7 +220,7 @@ export const projects: Project[] = [
       "Migrated mission-critical ERP from MS Access to Blazor Server.",
       "Architected cloud-native SQL Server environment."
     ],
-    tech: ["Blazor Server", "SQL Server", "Azure", "System Architecture"]
+    tech: ["Blazor", ".NET Core", "Azure", "SQL Server"]
   },
   {
     id: "pagination-tool",
@@ -231,7 +231,7 @@ export const projects: Project[] = [
       "Visual tool digitizing paper-based catalog layout process.",
       "Enables real-time collaboration between marketing and design."
     ],
-    tech: ["ASP.NET", "C#", "JavaScript", "SQL"]
+    tech: ["C#", ".NET Core", "JavaScript", "Git"]
   },
   {
     id: "microsites",
@@ -242,6 +242,6 @@ export const projects: Project[] = [
       "Self-service framework for spinning up product-specific retail sites.",
       "Allowed non-technical staff to deploy instances on demand."
     ],
-    tech: ["ASP.NET", "MVC", "IIS", "Automation"]
+    tech: [".NET Core", "IIS", "Automation", "ASP.NET", "Cloudflare"]
   }
 ];
