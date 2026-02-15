@@ -9,10 +9,10 @@ export const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="max-w-6xl mx-auto px-4 pb-20 pt-10">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 pb-20">
 
             {/* Hero Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 
                 {/* Profile Card (2/3 width) */}
                 <BentoCard className="md:col-span-2 min-h-[300px] justify-center relative overflow-hidden">
@@ -42,11 +42,12 @@ export const Home = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-4">
-                                <ActionButton onClick={() => navigate('/projects')}>
-                                    View Projects <ArrowRight size={16} />
-                                </ActionButton>
+
                                 <ActionButton variant="secondary" onClick={() => navigate('/experience')}>
                                     Browse Experience
+                                </ActionButton>
+                                <ActionButton onClick={() => navigate('/projects')}>
+                                    View Projects <ArrowRight size={16} />
                                 </ActionButton>
                             </div>
                         </motion.div>
@@ -54,7 +55,7 @@ export const Home = () => {
                 </BentoCard>
 
                 {/* Quick Stats / Info Column */}
-                <div className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 gap-6">
                     {/* Location */}
                     <BentoCard title="Base of Operations" delay={0.1}>
                         <div className="flex items-center gap-3 h-full">

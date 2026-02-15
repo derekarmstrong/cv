@@ -28,7 +28,7 @@ export const BentoCard = ({ children, className = '', delay = 0, title }: BentoC
                     </h3>
                 </div>
             )}
-            <div className="p-6 flex-grow">
+            <div className="p-4 md:p-6 flex-grow">
                 {children}
             </div>
         </motion.div>

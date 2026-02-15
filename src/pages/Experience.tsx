@@ -5,10 +5,10 @@ import { Calendar, MapPin } from 'lucide-react';
 
 export const Experience = () => {
     return (
-        <div className="max-w-4xl mx-auto pb-20 pt-10 px-4">
+        <div className="max-w-4xl mx-auto px-4 md:px-6 pb-20">
             <div className="mb-12">
-                <h2 className="text-3xl font-bold text-white mb-2">Experience Log</h2>
-                <p className="text-text-secondary">Chronological selection of professional engagements.</p>
+                <h2 className="text-3xl font-bold text-white mb-2">Work Experience</h2>
+                <p className="text-text-secondary">Here's what I've been up to.</p>
             </div>
 
             <div className="relative border-l border-border ml-3 md:ml-6 space-y-12">

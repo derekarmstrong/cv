@@ -4,10 +4,10 @@ import { BentoCard } from '../components/BentoCard';
 
 export const Skills = () => {
     return (
-        <div className="max-w-6xl mx-auto pb-20 pt-10 px-4">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 pb-20">
             <div className="mb-12">
-                <h2 className="text-3xl font-bold text-white mb-2">Technical Loadout</h2>
-                <p className="text-text-secondary">Proficiencies and toolsets.</p>
+                <h2 className="text-3xl font-bold text-white mb-2">Skills and Tools</h2>
+                <p className="text-text-secondary">These are the systems I've grown to love (or deal with).</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -8,11 +8,11 @@ import { Projects } from './pages/Projects';
 
 function App() {
   return (
-    <div className="min-h-screen text-gray-100 scanline relative pb-20">
+    <div className="min-h-screen text-gray-100 scanline relative pb-10 md:pb-20">
       <div className="relative z-10">
         <Navigation />
 
-        <main className="pt-20 px-4 container mx-auto">
+        <main className="pt-6 md:pt-8 container mx-auto">
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />

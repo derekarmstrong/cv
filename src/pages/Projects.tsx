@@ -3,10 +3,10 @@ import { BentoCard } from '../components/BentoCard';
 
 export const Projects = () => {
     return (
-        <div className="max-w-6xl mx-auto pb-20 pt-10 px-4">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 pb-20">
             <div className="mb-12">
-                <h2 className="text-3xl font-bold text-white mb-2">Project Gallery</h2>
-                <p className="text-text-secondary">Selected works and technical demonstrations.</p>
+                <h2 className="text-3xl font-bold text-white mb-2">Projects</h2>
+                <p className="text-text-secondary">Examples of work I have done for myself, clients, and employers.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
