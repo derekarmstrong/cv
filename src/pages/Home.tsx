@@ -3,7 +3,7 @@ import { ActionButton } from '../components/ActionButton';
 import { BentoCard } from '../components/BentoCard';
 import { profile } from '../data/resume';
 import { useNavigate } from 'react-router-dom';
-import { MapPin, Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
+import { MapPin, Mail, Github, Linkedin, ArrowRight, Download } from 'lucide-react';
 
 export const Home = () => {
     const navigate = useNavigate();
@@ -42,12 +42,14 @@ export const Home = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-4">
-
                                 <ActionButton variant="secondary" onClick={() => navigate('/experience')}>
-                                    Browse Experience
+                                    Browse Experience <ArrowRight size={16} />
                                 </ActionButton>
-                                <ActionButton onClick={() => navigate('/projects')}>
+                                <ActionButton variant="secondary" onClick={() => navigate('/projects')}>
                                     View Projects <ArrowRight size={16} />
+                                </ActionButton>
+                                <ActionButton onClick={() => window.open('/Derek-CV-02-26.pdf', '_blank')}>
+                                    Download CV <Download size={16} />
                                 </ActionButton>
                             </div>
                         </motion.div>
@@ -90,7 +92,7 @@ export const Home = () => {
                     {/* Stack Snippet */}
                     <BentoCard title="Core Stack" delay={0.3} className="bg-gradient-to-br from-surface to-surface-hover">
                         <div className="flex flex-wrap gap-2">
-                            {['React', 'TypeScript', 'Node.js', '.NET'].map(tech => (
+                            {['React', 'TypeScript', 'Node.js', '.NET', 'C#', 'SQL', 'Docker', 'Proxmox'].map(tech => (
                                 <ActionButton
                                     key={tech}
                                     variant="secondary"

@@ -38,7 +38,7 @@ export const profile: Profile = {
   name: "Derek Armstrong",
   title: "Solutions Architect and Software Engineer",
   location: "Stockholm, Sweden",
-  summary: "Experienced Solutions Architect and Software Engineer with a strong background in pre-sales engineering, solution design, and cloud migration. Proven track record of managing technical lifecycles, optimizing infrastructure, and leading cross-functional teams.",
+  summary: "Full-Stack Developer and Systems Engineer with 10+ years of experience shipping real software and infrastructure solutions. US citizen currently residing in Stockholm with the intent of permanent residence and contributing to Sweden’s technology and gaming sectors.",
   email: "cv@derekarm.com",
   socials: {
     linkedin: "https://linkedin.com/in/derek-allen-armstrong",
@@ -49,199 +49,339 @@ export const profile: Profile = {
 export const experience: Experience[] = [
   {
     id: "poynters",
-    company: "Poynter's Business Solutions",
+    company: "Poynter’s Business Solutions",
     role: "IT Manager",
     period: "September 2025 - January 2026",
     location: "Marietta, Ohio",
     description: [
-      "Acted as the primary Subject Matter Expert (SME) for client engagements, building custom IT service packages and cloud migration strategies utilizing MSP frameworks.",
-      "Performed comprehensive infrastructure audits for internal and client environments; identified critical security vulnerabilities in legacy Windows Server and firewall configurations.",
-      "Leveraged a dual background in development and creative suites (Adobe InDesign, Photoshop, Illustrator) to assemble a comprehensive technical product catalog.",
-      "Managed the full technical lifecycle for hardware and software procurement, overseeing vendor relationships and contract renewals."
+      "Performed pre-sales engineering to build project plans for client hardware upgrades.",
+      "Digitized processes for our sales department, improving their annual business reviews.",
+      "Onboarded and offboarded customers to the company’s managed IT solutions platform.",
+      "Quickly and efficiently responded to a customer’s cybersecurity situation.",
+      "Designed marketing collateral, including a products and services catalog, multiple fliers, and visual updates to the company’s website.",
+      "Consolidated legacy hardware by building virtualization plans for older servers, introducing containers and moving certain services off-site.",
+      "Managed personnel, systems, and assets within the Information Technology department."
     ]
   },
   {
     id: "idatp",
-    company: "IDATP",
-    role: "Systems Technician & Developer",
+    company: "Intuitive Data and Technology Products",
+    role: "Technician & Developer",
     period: "June 2024 - September 2025",
     location: "Belpre, Ohio",
     description: [
-      "Managed DevOps for a comprehensive greenhouse management ecosystem using .NET Core and React; improved on-prem server clusters and offline-first data verification.",
-      "Engineered mobile-first workflows for field technicians, integrating ruggedized Android tablets and barcode scanning hardware.",
-      "Leveraged Directus as a headless CMS and database accelerator to drastically reduce development cycles.",
-      "Conducted deep-dive business analysis for the agricultural, logistics, and livestock industries; mapped physical production workflows into structured digital tracking systems.",
-      "Managed a diverse portfolio of client websites (WordPress/WooCommerce), providing high-level support and performance optimization."
+      "Provided help desk and technical support services to employees and our clients.",
+      "Ensured high-quality website development practices by performing QA duties on outgoing projects, noting common issues and updating internal processes to account.",
+      "Owned the development and release of two full-stack business workflow applications (time, mileage, and payroll app for a trucking organization; and a livestock processing workflow app for a local butcher and grocer) using Directus, Node, Express, and React.",
+      "Developed internal project and business management tools using Directus, Node, Express, and React.",
+      "Investigated and implemented basic LLM-enabled workflow improvements using Claude Code and GitHub CoPilot.",
+      "Developed a volunteer time tracking application for a local nonprofit organization using Google AppSheet, then trained the organization’s director on iterative improvements."
     ]
   },
   {
-    id: "paradynamix",
+    id: "paradynamix-it-director",
     company: "Paradynamix",
     role: "Technology Director",
-    period: "April 2022 - December 2023",
-    location: "United States",
+    period: "2021 - 2023",
+    location: "Marietta, Ohio",
     description: [
-      "Developed a high-precision lumber tracking system utilizing LiDAR and FLIR on Android mobile devices; transitioned legacy VB.NET logic to a modern Blazor Hybrid (MAUI) architecture.",
-      "Built a 'Business in a Box' private cloud solution utilizing Docker and virtualization to provide high-availability alternatives to SaaS monopolies.",
-      "Established and scaled the firm’s Managed Service Provider (MSP) division; managed vendor partnerships with Pax8, NinjaOne, and cybersecurity platforms.",
-      "Directed a hybrid team of developers and technicians, encouraging a 'Security-First' culture and implementing lean operational frameworks."
+      "Managed the software development lifecycle for web, mobile, and desktop applications.",
+      "Published multiple mobile apps through Apple’s App Store and Google Play Store.",
+      "Hired a team of software developers and IT technicians and managed internal KPIs to encourage career growth and the team overall.",
+      "Worked continuously to improve our Managed Services division by staying up-to-date with current security threats, client needs, and opportunities to increase market value.",
+      "Implemented automated testing frameworks using BrowserStack and Sentry.",
+      "Created and maintained a cloud-based business phone system by hosting 3CX on AWS and utilizing Raspberry Pis as session border controllers amongst client networks.",
+      "Developed a boutique, web-based video surveillance system for a pet boarding organization and their clients using existing hardware and self-hosted computer vision using Python, OpenCV, ASP.NET, and Handbrake.",
+      "Built and implemented a FOSS self-hosted alternative to popular cloud services using Proxmox, Docker, Wazuh, TacticalRMM, Duplicati.",
+      "Investigated and implemented basic LLM-enabled workflow improvements using ChatGPT and Claude Code."
     ]
   },
   {
-    id: "paradynamix-pm",
+    id: "paradynamix-manager",
     company: "Paradynamix",
-    role: "Implementation & Support Manager",
-    period: "October 2020 - April 2022",
-    location: "United States",
+    role: "Support & Implementation Manager",
+    period: "2020 - 2021",
+    location: "Marietta, Ohio",
     description: [
-      "Managed the migration of a legacy ERP system from Microsoft Access to a modern Blazor Server (.NET Core) architecture.",
-      "Provided technical advisory for public sector and financial institutions; performed security audits to identify and mitigate critical CVEs.",
-      "Assumed leadership of critical 'rescue' projects, maintaining technical continuity across organizational shifts."
+      "Built a Managed Services division for the organization, replacing our breakfix model with proactive cybersecurity, monitoring and management tools such as Acronis, SentinelOne, NinjaOne, and Huntress.",
+      "Worked with vendors and industry partners to increase our buying power and deliver more effective technology solutions to our clients.",
+      "Reviewed client business processes to identify inefficiencies and gaps in their technology workflows, improving their productivity and our own managed services.",
+      "Project management for multiple web, mobile, and desktop line-of-business applications, written using Blazor, Xamarin, ASP.NET, WinForms, and React (MERN).",
+      "Managed cloud-based infrastructure across platforms, including Amazon Web Services (Lightsail, RDS, IAM, Elastic Search), Google Cloud (Kubernetes), and GitLab."
     ]
   },
   {
     id: "paradynamix-dev",
     company: "Paradynamix",
-    role: "Developer & Technician",
-    period: "June 2020 - October 2020",
-    location: "United States",
+    role: "Technician & Developer",
+    period: "2020",
+    location: "Marietta, Ohio",
     description: [
-      "Built and maintained a suite of diverse SaaS applications (Node.js, Express, Vue) for industries ranging from field service logistics to high-end construction documentation.",
-      "Championed the adoption of enterprise UI frameworks (Syncfusion, Radzen) to enforce visual consistency.",
-      "Managed a multi-tenant cloud environment utilizing AWS Lightsail, S3, RDS, and other tools.",
-      "Shifted from .NET to Node.js environments, implementing structural patterns to maintain code reliability."
+      "Provided help desk and support services, and training to employees and our clients.",
+      "Built disaster recovery, cybersecurity, and backoffice technology solutions for our clients.",
+      "Compiled technical documentation for software systems, creating system diagrams, user manuals within Confluence, and tutorial videos for employees and end-users.",
+      "Ensured high-quality website development practices by performing QA duties on outgoing projects, noting common issues and updating internal processes to account.",
+      "Assisted with development of new and existing software projects, primarily written in Node, Express, Vue, and MySQL.",
+      "Adopted legacy Visual Basic/.NET software and worked to upgrade them to more modern C#/.NET, ASP.NET, and cloud-based environments.",
+      "Migrated organizations to and from Microsoft 365, Google Cloud, and on-prem systems."
     ]
   },
   {
-    id: "budk",
-    company: "Bud K Worldwide, Inc.",
+    id: "on-the-edge-dev",
+    company: "On The Edge Brands",
     role: "Full-Stack Developer",
-    period: "October 2018 - June 2020",
+    period: "2018 - 2020",
     location: "Moultrie, Georgia",
     description: [
-      "Engineered a custom self-service framework within the corporate Intranet, allowing non-technical employees to rapidly deploy and manage specialized e-commerce micro-sites.",
-      "Led performance optimization initiatives and Cloudflare Enterprise implementation to bypass platform reach restrictions.",
-      "Migrated source control and project management from legacy Team Foundation Server (TFS) to Azure DevOps and Asana.",
-      "Maintained high-availability for multiple high-traffic e-commerce platforms (10,000+ monthly active users)."
+      "Responsible for design, development, security, and stability for nine e-commerce sites.",
+      "Maintained all infrastructure related to web servers, databases, and load balancers.",
+      "Improved search engine visibility by implementing modern SEO practices in our ASP.NET WebForms / MVC e-commerce websites by utilizing Google Search Console and Bing Webmaster Tools to identify and resolve improper redirects and errors.",
+      "Managed releases for the IT department within TFS (later Azure DevOps).",
+      "Developed SOAP and REST APIs to expose public data to other developers and tools.",
+      "Brought the company into omnichannel commerce by publishing our inventory as product feeds to Google Shopping, Amazon, eBay, Wish, and Walmart.",
+      "Managed the implementation of Cloudflare Enterprise across 90 domains, with a focus on content delivery, vanity domain services, and image optimization algorithms.",
+      "Developed boutique e-commerce websites for successful product lines and categories, including the prepper-oriented subscription box service SHTF Survival."
     ]
   },
   {
-    id: "budk-artist",
-    company: "Bud K Worldwide, Inc.",
+    id: "on-the-edge-artist",
+    company: "On The Edge Brands",
     role: "Production Artist",
-    period: "August 2016 - October 2018",
+    period: "2016 - 2018",
     location: "Moultrie, Georgia",
     description: [
-      "Designed and co-developed a visual pagination tool within the corporate intranet, digitizing a legacy paper-based catalog design process.",
-      "Served as the primary technical bridge between the Creative and IT departments; managed enterprise macOS deployments.",
-      "Re-engineered the video production workflow to accommodate 4K high-bitrate assets and drone cinematography."
+      "Design, editing, and proofing of the BUDK, Kennesaw Cutlery, CH Kadels, True Swords, and United Cutlery catalogs using Adobe InDesign, Illustrator, and Photoshop.",
+      "Design for marketing content used by our websites, email campaigns, newsletters, and other collateral using Adobe Illustrator and Photoshop.",
+      "Introduced workflow improvements to the Creative and Multimedia departments, including a new video production workflow using automations within Adobe Premiere Pro, Audition, Lightroom, and Photoshop.",
+      "Provided help desk support to macOS users within the Creative and Multimedia departments, including onboarding and offboarding of technology assets.",
+      "Developed a digital catalog pagination tool to reduce errors within the Creative and Merchandising departments when designing catalog pages."
     ]
   },
   {
-    id: "budk-analyst",
-    company: "Bud K Worldwide, Inc.",
-    role: "Information Technology Business Analyst",
-    period: "January 2016 - August 2016",
-    location: "Moultrie, GA",
+    id: "on-the-edge-analyst",
+    company: "On The Edge Brands",
+    role: "IT Business Analyst",
+    period: "2016",
+    location: "Moultrie, Georgia",
     description: [
-      "Contributed to the automated reports application that aggregated siloed data from JDA Ecometry, SAP, Microsoft Dynamics, and website databases.",
-      "Expanded the company Intranet (written in ASP.NET), moving the organization from spreadsheet-based workflows to a centralized web-based ecosystem.",
-      "Worked with department leads to identify bottlenecks in procurement and customer service."
+      "Worked closely with department leaders to develop automated reports in a C#/.NET console application, using data from our Microsoft SQL Server database, Microsoft Dynamics GP, and JDA Ecometry to empower decision makers.",
+      "Converted older reporting tools into modern utilities hosted within our company intranet, developed using ASP.NET WebForms, Microsoft SQL Server, and IIS.",
+      "Provided help desk support to employees and managed computer hardware, including servers, network devices, and office phones.",
+      "Created an automated computer imaging solution with FOG Project, Linux, and PXE to increase IT department efficiency by removing unnecessary downtime.",
+      "Built a digital signage solution using YoDeck and Raspberry Pi single-board computers to communicate messages and metrics through our offices and the warehouse."
     ]
   }
 ];
 
 export const skills: SkillCategory[] = [
   {
-    title: "Languages & Frameworks",
-    skills: ["TypeScript", "React", "Node.js", ".NET Core", "C#", "Blazor", "Vue.js", "Express", "Python"]
+    title: "Programming Languages & Frameworks",
+    skills: ["JavaScript", "Node.js", "Vue.js", "React", "Express", "TypeScript", "C#", ".NET", "Python", "SQL", "HTML", "CSS", "Drupal"]
   },
   {
-    title: "Cloud & Infrastructure",
-    skills: ["Azure", "AWS", "Docker", "Kubernetes", "Linux", "Windows Server", "Cloudflare"]
+    title: "Back-End & Databases",
+    skills: ["Supabase", "Directus", "PostgreSQL", "SQL Server", "MySQL", "REST APIs"]
   },
   {
-    title: "Tools & Platforms",
-    skills: ["Git", "Directus", "WordPress", "WooCommerce", "Adobe Creative Suite", "Figma"]
+    title: "Infrastructure & DevOps",
+    skills: ["Proxmox", "Hyper-V", "Docker", "Kubernetes", "Linux", "Ubuntu", "Debian", "Windows Server", "Cloudflare", "GitHub", "AWS", "GCP", "Azure", "n8n", "IT Auditing", "Disaster Recovery", "Section 508 Compliance"]
+  },
+  {
+    title: "AI & Agentic LLMs",
+    skills: ["Claude Code", "GitHub CoPilot", "OpenClaw", "Antigravity"]
+  },
+  {
+    title: "Graphic Design",
+    skills: ["Adobe Creative Cloud", "Photoshop", "Illustrator", "InDesign", "Premiere Pro", "Figma", "UI/UX Design", "Interactive Prototyping"]
   }
 ];
 
 export const projects: Project[] = [
   {
-    id: "woodworks",
-    title: "Lumber Tracking System",
-    role: "Lead Developer",
-    period: "2023",
-    description: [
-      "High-precision tracking using LiDAR and FLIR on Android.",
-      "Real-time data processing with Blazor Hybrid (MAUI)."
-    ],
-    tech: ["Blazor", "C#", "Android", "Git", "TypeScript"]
-  },
-  {
-    id: "greenhouse-ops",
-    title: "Greenhouse Operations System",
-    role: "DevOps Engineer",
-    period: "2024",
-    description: [
-      "IoT and Edge infrastructure for greenhouse management.",
-      "Offline-first data verification for high-interference environments."
-    ],
-    tech: [".NET Core", "React", "Linux", "Git", "TypeScript", "Azure"]
-  },
-  {
-    id: "business-in-a-box",
-    title: "Private Cloud Infrastructure",
-    role: "System Architect",
-    period: "2022",
-    description: [
-      "Self-hosted private cloud solution using Docker and virtualization.",
-      "Provided high-availability alternative to proprietary SaaS platforms."
-    ],
-    tech: ["Docker", "Linux", "Virtualization", "AWS", "Networking", "Cloudflare"]
-  },
-  {
-    id: "logistics-platform",
-    title: "Logistics Platform Re-platforming",
+    id: "trucking-app",
+    title: "Trucking Workflow App",
     role: "Full-Stack Developer",
     period: "2024",
     description: [
-      "Modernized logistics tool into a Node.js/Directus environment.",
-      "Visual builder integration for non-technical team schema design."
+      "Comprehensive business workflow application for time, mileage, and payroll.",
+      "Built using Directus, Node, Express, and React for a trucking organization."
     ],
-    tech: ["Node.js", "Directus", "Vue.js", "PostgreSQL", "Git", "TypeScript"]
+    tech: ["Directus", "Node.js", "Express", "React", "PostgreSQL"]
   },
   {
-    id: "erp-modernization",
-    title: "ERP Modernization",
-    role: "Strategy Lead",
+    id: "butcher-app",
+    title: "Livestock Processing App",
+    role: "Full-Stack Developer",
+    period: "2024",
+    description: [
+      "Livestock processing workflow app for a local butcher and grocer.",
+      "Streamlined digital tracking of physical production workflows."
+    ],
+    tech: ["Directus", "Node.js", "Express", "React", "PostgreSQL"]
+  },
+  {
+    id: "volunteer-tracker",
+    title: "Volunteer Time Tracker",
+    role: "Developer",
+    period: "2024",
+    description: [
+      "Volunteer time tracking application for a local nonprofit organization.",
+      "Developed using Google Appsheet with iterative improvement training."
+    ],
+    tech: ["Google Appsheet"]
+  },
+  {
+    id: "surveillance-system",
+    title: "Video Surveillance System",
+    role: "Technology Director",
     period: "2022",
     description: [
-      "Migrated mission-critical ERP from MS Access to Blazor Server.",
-      "Architected cloud-native SQL Server environment."
+      "Boutique web-based video surveillance system with self-hosted computer vision.",
+      "Utilized Python, OpenCV, ASP.NET, and Handbrake."
     ],
-    tech: ["Blazor", ".NET Core", "Azure", "SQL Server"]
+    tech: ["Python", "OpenCV", "ASP.NET", "Handbrake"]
+  },
+  {
+    id: "private-cloud",
+    title: "Private Cloud Solution",
+    role: "Technology Director",
+    period: "2023",
+    description: [
+      "FOSS self-hosted alternative to popular cloud services.",
+      "Utilized Proxmox, Docker, Wazuh, TacticalRMM, and Duplicati."
+    ],
+    tech: ["Proxmox", "Docker", "Linux", "Networking"]
   },
   {
     id: "pagination-tool",
     title: "Digital Catalog Pagination Tool",
-    role: "Full-Stack Developer",
+    role: "Production Artist",
     period: "2018",
     description: [
-      "Visual tool digitizing paper-based catalog layout process.",
-      "Enables real-time collaboration between marketing and design."
+      "Digital catalog pagination tool to reduce errors in design process.",
+      "Bridged the gap between Creative and IT departments."
     ],
-    tech: ["C#", ".NET Core", "JavaScript", "Git"]
+    tech: ["C#", ".NET", "Automation"]
   },
   {
-    id: "microsites",
-    title: "Multi-Tenant Micro-Sites",
-    role: "Engineer",
+    id: "omnichannel-commerce",
+    title: "Omnichannel Commerce Implementation",
+    role: "Full-Stack Developer",
     period: "2019",
     description: [
-      "Self-service framework for spinning up product-specific retail sites.",
-      "Allowed non-technical staff to deploy instances on demand."
+      "Brought the company into omnichannel commerce via product feeds.",
+      "Integrated with Google Shopping, Amazon, eBay, Wish, and Walmart."
     ],
-    tech: [".NET Core", "IIS", "Automation", "ASP.NET", "Cloudflare"]
+    tech: [".NET", "SQL Server", "REST APIs", "SOAP"]
+  },
+  {
+    id: "athens-machine",
+    title: "Tire Mold Manufacturer Infrastructure Rebuild",
+    role: "Technology Director",
+    period: "2022",
+    description: [
+      "Complete IT infrastructure audit and rebuild for tire mold machining company.",
+      "Established granular control of file server access and disaster recovery plans."
+    ],
+    tech: ["IT Auditing", "Disaster Recovery", "Networking", "Windows Server"]
+  },
+  {
+    id: "bobs-market",
+    title: "Greenhouse Management System",
+    role: "Technology Director",
+    period: "2022",
+    description: [
+      "Developed a modern in-house management system for tracking seed packets across five acres of greenhouses.",
+      "Replaced outdated DOS-based symbol scanners with real-time wireless sync on Windows tablets."
+    ],
+    tech: ["Custom Software Development", "Windows Server", "Networking"]
+  },
+  {
+    id: "carolina-rides",
+    title: "Cycle Rental Company CMS",
+    role: "Technology Director",
+    period: "2023",
+    description: [
+      "Creation of a dedicated, rental-focused CMS website to separate electric vehicle rental operations.",
+      "Fast-loading, mobile-optimized experience with cohesive brand identity."
+    ],
+    tech: ["UI/UX Design", "Custom Web Styling", "Responsive Design"]
+  },
+  {
+    id: "jefferson-county",
+    title: "County Government Web Ecosystem",
+    role: "Technology Director",
+    period: "2022",
+    description: [
+      "Multi-phase redesign and rebuild of three independent web environments using Drupal.",
+      "Achieved Section 508 compliance and implemented department-level role-based permissions."
+    ],
+    tech: ["Drupal", "UI/UX Design", "Section 508 Compliance", "Server Management"]
+  },
+  {
+    id: "ovsc-ecommerce",
+    title: "Gas Chromatography Supplier E-commerce Modernization",
+    role: "Technology Director",
+    period: "2023",
+    description: [
+      "Redesign and modernization of an e-commerce site for a gas chromatography equipment manufacturer.",
+      "Created an intuitive user flow and fully responsive design across all devices."
+    ],
+    tech: ["UI/UX Design", "Responsive Design", "Branding"]
+  },
+  {
+    id: "pm-company",
+    title: "Property Management Company Work Order Application",
+    role: "Technology Director",
+    period: "2023",
+    description: [
+      "Complete rewrite of a legacy maintenance work order application into Vue.js.",
+      "Desktop/mobile integration for real-time task switching and time entry export."
+    ],
+    tech: ["Vue.js", "UI/UX Design", "Custom Web App Development"]
+  },
+  {
+    id: "the-proz-jobtrax",
+    title: "Restaurant Cleaning Scheduling CRM",
+    role: "Technology Director",
+    period: "2022",
+    description: [
+      "Custom software development for job scheduling, CRM, and real-time photo documentation.",
+      "Significant improvement in onsite accountability and reporting efficiency."
+    ],
+    tech: ["UI/UX Design", "Real-time Data Tracking", "CRM Integration"]
+  },
+  {
+    id: "thomsons-landscaping",
+    title: "Landscaping POS System",
+    role: "Technology Director",
+    period: "2023",
+    description: [
+      "In-house Point of Sale program to replace a difficult-to-use legacy system.",
+      "Reduced transaction times and simplified navigation while retaining familiar hotkeys."
+    ],
+    tech: ["UI/UX Design", "POS Systems", "Inventory System Integration"]
+  },
+  {
+    id: "united-bank",
+    title: "Regional Bank Website Rethink",
+    role: "Technology Director",
+    period: "2022",
+    description: [
+      "Complete website retheme and redesign on Drupal focused on simplifying backend administration.",
+      "Developed a custom front-end page builder to simplify the administrative editing process."
+    ],
+    tech: ["Drupal", "UI/UX Design", "Interactive Prototyping"]
+  },
+  {
+    id: "water-doctors",
+    title: "Vehicle Servicing Company Tech Portal",
+    role: "Technology Director",
+    period: "2022",
+    description: [
+      "Multi-portal web and mobile application connecting dealerships, franchisees, and technicians.",
+      "Improved daily task planning and direct scheduling from mobile apps."
+    ],
+    tech: ["UI/UX Design", "Custom Web Application", "Mobile App Integration"]
   }
 ];
